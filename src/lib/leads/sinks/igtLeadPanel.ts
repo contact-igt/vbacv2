@@ -4,7 +4,7 @@ const unquote = (v?: string | null) => (v || "").trim().replace(/^["']|["']$/g, 
 
 // This deployment's stable identifier in the IGT Lead Panel. One key per
 // website / landing page — the admin panel groups enquiries by it.
-const SOURCE_KEY = "birthwave_website";
+const SOURCE_KEY = "birthwave_vbac";
 
 // Birthwave IGT Lead Panel public intake. The panel stores the lead and
 // mirrors it to the right Google Sheet tab server-side (retried up to 3
