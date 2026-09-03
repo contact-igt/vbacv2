@@ -355,7 +355,8 @@ export function BirthDeliveryCarePage() {
         </Container>
       </section>
 
-      {/* SECTION 5: PREPARING YOUR BODY & MIND */}
+      {/* SECTION 5: PREPARING YOUR BODY & MIND — hidden on website + landing pages per request */}
+      {false && (
       <section className="bg-cream/45 py-16 md:py-24 border-b border-border/60">
         <Container>
           <div className="max-w-3xl">
@@ -427,6 +428,7 @@ export function BirthDeliveryCarePage() {
           </div>
         </Container>
       </section>
+      )}
 
       {/* SECTION 6: MEET YOUR DOCTOR */}
       <section className="bg-white py-16 md:py-24 border-b border-border/60">

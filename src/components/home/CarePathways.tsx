@@ -45,8 +45,8 @@ const pathways = [
     body: "Gynaecology, vaginismus treatment, pelvic wellness and holistic support.",
     link: "Gynaecology & Wellness",
     href: "/gynaecology",
-    image: "/images/birthwave/birthwave-childbirth-workshop-01.png",
-    alt: "Women's wellness and education session",
+    image: "/womens-care.jpg",
+    alt: "Women's wellness and gynaecology care at Birthwave",
   },
 ] as const;
 

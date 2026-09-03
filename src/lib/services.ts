@@ -91,8 +91,8 @@ export const services: readonly ServiceContent[] = [
       "Routine and high-touch pregnancy care with a clear plan for each trimester.",
     accent: "rose",
     image: {
-      src: "/images/care/birth-partner-session.png",
-      alt: "A pregnant woman and her partner in a calm antenatal session",
+      src: "/images/care/pregnancy-care2.jpg",
+      alt: "A guided pregnancy movement and preparation class at Birthwave",
     },
     imageSide: {
       src: "/images/care/antenatal-movement-coaching.png",
@@ -148,8 +148,8 @@ export const services: readonly ServiceContent[] = [
       heading: "Pregnancy care is more than appointments and scans.",
       body: "Medical care is at the centre of your pregnancy journey, but how you eat, move, prepare, understand your body and feel emotionally also matters.\nBirthwave brings these parts of pregnancy care together around you.",
       image: {
-        src: "/images/care/childbirth-workshop-01.png",
-        alt: "A small group childbirth education workshop at The Birth Wave",
+        src: "/images/care/personalised-care.jpg",
+        alt: "A doctor's hands supporting a pregnant woman during an antenatal check",
       },
       items: [
         {
@@ -385,6 +385,7 @@ export const services: readonly ServiceContent[] = [
     image: {
       src: "/images/care/postpartum-baby-feet.png",
       alt: "A newborn's feet resting against a mother's postpartum belly",
+      objectPosition: "object-[50%_40%] scale-[1.3]",
     },
     imageSide: {
       src: "/images/birthwave/dr-santoshi.JPG",
