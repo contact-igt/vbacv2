@@ -49,7 +49,7 @@ export default function DoctorsPage() {
                 Connected care, from one doctor to a whole team.
               </h1>
               <p className="mt-5 max-w-lg text-[16px] leading-[1.6] text-muted">
-                Birthwave brings obstetrics, pediatrics, fertility, pelvic health,
+                The Birthwave brings obstetrics, pediatrics, fertility, pelvic health,
                 lactation and emotional well-being together — so your care doesn&rsquo;t
                 stop at one specialty.
               </p>

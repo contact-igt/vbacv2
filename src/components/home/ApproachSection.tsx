@@ -36,7 +36,7 @@ export function ApproachSection() {
           <p className="mt-6 max-w-[480px] text-[16px] leading-relaxed text-muted md:text-[17px]">
             Pregnancy and women&rsquo;s health are not only about appointments and reports.
             Nutrition, movement, emotional wellbeing, preparation for birth, breastfeeding
-            and recovery can all be part of the journey &mdash; that is why Birthwave brings
+            and recovery can all be part of the journey &mdash; that is why The Birthwave brings
             different areas of care together around the woman.
           </p>
         </Reveal>

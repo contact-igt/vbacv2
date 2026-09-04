@@ -11,7 +11,7 @@ import { services, supportingServices } from "@/lib/services";
 export const metadata: Metadata = {
   title: "Services — Pregnancy, Birth, Fertility & Newborn Care | The Birth Wave",
   description:
-    "Every Birthwave service, from pregnancy and antenatal care through VBAC, fertility, vaginismus support and newborn care — doctor-led, in Nungambakkam, Chennai.",
+    "Every The Birthwave service, from pregnancy and antenatal care through VBAC, fertility, vaginismus support and newborn care — doctor-led, in Nungambakkam, Chennai.",
 };
 
 export default function ServicesPage() {
@@ -88,7 +88,7 @@ export default function ServicesPage() {
               Supporting services
             </h2>
             <p className="mt-3 max-w-xl text-[16px] leading-relaxed text-muted">
-              A wider range of care is available at Birthwave. Tell us what you need and
+              A wider range of care is available at The Birthwave. Tell us what you need and
               we&rsquo;ll guide you to the right appointment.
             </p>
             <ul className="mt-8 grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
@@ -100,7 +100,7 @@ export default function ServicesPage() {
                   >
                     {item.title}
                     <span className="text-[13px] font-semibold text-link">
-                      Talk to Birthwave &rarr;
+                      Talk to The Birthwave &rarr;
                     </span>
                   </Link>
                 </li>

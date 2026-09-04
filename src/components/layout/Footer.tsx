@@ -157,7 +157,7 @@ export function Footer({ minimalNav = false }: { minimalNav?: boolean }) {
 
       <Container>
         <div className="mt-12 border-t border-footer-divider pt-6 text-[12px] sm:text-[13px] text-footer-legal">
-          &copy; Birthwave. All rights reserved. Privacy Policy &bull; Terms &amp;
+          &copy; The Birthwave. All rights reserved. Privacy Policy &bull; Terms &amp;
           Conditions &bull; Medical Disclaimer
         </div>
       </Container>

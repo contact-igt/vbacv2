@@ -23,7 +23,7 @@ const FALLBACK_REVIEWS = [
     id: "rev-2",
     authorName: "Ananya Sundaram",
     rating: 5,
-    text: "Found Birthwave when looking for natural birth options. Dr. Santoshi and Sheethal made us feel completely supported and confident throughout labor.",
+    text: "Found The Birthwave when looking for natural birth options. Dr. Santoshi and Sheethal made us feel completely supported and confident throughout labor.",
     relativeTime: "1 month ago",
   },
   {
