@@ -13,7 +13,7 @@ const pathways = [
     link: "Fertility & Preconception",
     href: "/fertility-preconception",
     image: "/images/birthwave/birthwave-prenatal-workshop.png",
-    alt: "Planning a pregnancy counseling at Birthwave",
+    alt: "Planning a pregnancy counseling at The Birthwave",
   },
   {
     n: "02",
@@ -45,8 +45,8 @@ const pathways = [
     body: "Gynaecology, vaginismus treatment, pelvic wellness and holistic support.",
     link: "Gynaecology & Wellness",
     href: "/gynaecology",
-    image: "/images/birthwave/birthwave-childbirth-workshop-01.png",
-    alt: "Women's wellness and education session",
+    image: "/womens-care.jpg",
+    alt: "Women's wellness and gynaecology care at The Birthwave",
   },
 ] as const;
 

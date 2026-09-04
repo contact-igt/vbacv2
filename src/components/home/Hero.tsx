@@ -42,7 +42,7 @@ export function Hero() {
 
           <p className="mt-6 max-w-[540px] text-[17px] leading-[1.6] text-muted">
             From fertility and pregnancy to birth preparation, postpartum recovery and
-            newborn care, Birthwave brings your care journey together with clarity,
+            newborn care, The Birthwave brings your care journey together with clarity,
             warmth and clinical guidance.
           </p>
 

@@ -40,7 +40,7 @@ export function DoctorLedCare() {
               Clinical care and the birth experience can belong together.
             </h2>
             <p className="mt-5 max-w-xl text-[16.5px] leading-relaxed text-muted">
-              Birthwave is designed to feel less like moving between disconnected
+              The Birthwave is designed to feel less like moving between disconnected
               appointments and more like one continuous care journey, with space for
               questions, preferences, preparation and follow up.
             </p>

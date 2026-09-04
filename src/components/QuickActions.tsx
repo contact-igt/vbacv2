@@ -119,7 +119,7 @@ export function QuickActions() {
           target="_blank"
           rel="noopener noreferrer"
           onClick={() => track("directions")}
-          aria-label="Get directions to Birthwave"
+          aria-label="Get directions to The Birthwave"
           className="flex flex-col items-center justify-center gap-1 min-w-0 w-full text-center px-1 text-ink/75 transition-colors hover:text-brown active:scale-95"
         >
           <DirectionsIcon />
@@ -130,7 +130,7 @@ export function QuickActions() {
           target="_blank"
           rel="noopener noreferrer"
           onClick={() => track("whatsapp")}
-          aria-label="Message Birthwave on WhatsApp"
+          aria-label="Message The Birthwave on WhatsApp"
           className="flex flex-col items-center justify-center gap-1 min-w-0 w-full text-center px-1 text-ink/75 transition-colors hover:text-brown active:scale-95"
         >
           <WhatsAppIcon />
@@ -139,7 +139,7 @@ export function QuickActions() {
         <a
           href={site.phoneHref}
           onClick={() => track("call")}
-          aria-label="Call Birthwave"
+          aria-label="Call The Birthwave"
           className="group relative -mt-5 flex flex-col items-center justify-center min-w-0 w-full text-center"
         >
           <span className="flex h-12 w-12 items-center justify-center rounded-full bg-brown text-white shadow-[0_8px_24px_rgba(97,62,55,0.45)] transition-all duration-200 group-active:scale-95">
@@ -152,7 +152,7 @@ export function QuickActions() {
           target="_blank"
           rel="noopener noreferrer"
           onClick={() => track("instagram")}
-          aria-label="Follow Birthwave on Instagram"
+          aria-label="Follow The Birthwave on Instagram"
           className="flex flex-col items-center justify-center gap-1 min-w-0 w-full text-center px-1 text-ink/75 transition-colors hover:text-brown active:scale-95"
         >
           <InstagramIcon />
@@ -179,7 +179,7 @@ export function QuickActions() {
           target="_blank"
           rel="noopener noreferrer"
           onClick={() => track("directions")}
-          aria-label="Get directions to Birthwave"
+          aria-label="Get directions to The Birthwave"
           className="group/rail relative flex h-11 w-11 items-center justify-center rounded-full border border-border bg-white text-ink shadow-[0_4px_16px_rgba(46,36,33,0.1)] transition-colors hover:border-brown hover:text-brown"
         >
           <DirectionsIcon />
@@ -192,7 +192,7 @@ export function QuickActions() {
           target="_blank"
           rel="noopener noreferrer"
           onClick={() => track("whatsapp")}
-          aria-label="Message Birthwave on WhatsApp"
+          aria-label="Message The Birthwave on WhatsApp"
           className="group/rail relative flex h-11 w-11 items-center justify-center rounded-full border border-border bg-white text-ink shadow-[0_4px_16px_rgba(46,36,33,0.1)] transition-colors hover:border-brown hover:text-brown"
         >
           <WhatsAppIcon />
@@ -203,7 +203,7 @@ export function QuickActions() {
         <a
           href={site.phoneHref}
           onClick={() => track("call")}
-          aria-label="Call Birthwave"
+          aria-label="Call The Birthwave"
           className="group/rail relative flex h-14 w-14 items-center justify-center rounded-full bg-brown text-white shadow-[0_6px_20px_rgba(97,62,55,0.35)] transition-colors hover:bg-brown-600"
         >
           <CallIcon size={20} />
@@ -216,7 +216,7 @@ export function QuickActions() {
           target="_blank"
           rel="noopener noreferrer"
           onClick={() => track("instagram")}
-          aria-label="Follow Birthwave on Instagram"
+          aria-label="Follow The Birthwave on Instagram"
           className="group/rail relative flex h-11 w-11 items-center justify-center rounded-full border border-border bg-white text-ink shadow-[0_4px_16px_rgba(46,36,33,0.1)] transition-colors hover:border-brown hover:text-brown"
         >
           <InstagramIcon />

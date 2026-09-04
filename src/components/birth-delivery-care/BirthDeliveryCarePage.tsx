@@ -117,8 +117,8 @@ const faqsData = [
     linkText: "Learn More About VBAC",
   },
   {
-    q: "Does Birthwave provide yoga, nutrition and birth preparation along with pregnancy care?",
-    a: "Birthwave’s approach brings medical pregnancy care together with supportive services around pregnancy, childbirth and recovery.\n\nDepending on your individual needs and the services appropriate for your pregnancy, this may include pregnancy yoga and movement, nutrition guidance, childbirth education, birth-partner preparation, pelvic health support, lactation support and postpartum recovery.\n\nThis allows different aspects of pregnancy and birth preparation to be connected within your overall care journey.",
+    q: "Does The Birthwave provide yoga, nutrition and birth preparation along with pregnancy care?",
+    a: "The Birthwave’s approach brings medical pregnancy care together with supportive services around pregnancy, childbirth and recovery.\n\nDepending on your individual needs and the services appropriate for your pregnancy, this may include pregnancy yoga and movement, nutrition guidance, childbirth education, birth-partner preparation, pelvic health support, lactation support and postpartum recovery.\n\nThis allows different aspects of pregnancy and birth preparation to be connected within your overall care journey.",
   },
   {
     q: "What does holistic natural birth preparation mean?",
@@ -137,7 +137,7 @@ export function BirthDeliveryCarePage() {
         tone="dark"
         eyebrow="NATURAL BIRTH CARE IN CHENNAI"
         heading="Prepare for a natural birth with confidence, knowledge and the right support."
-        intro="At Birthwave, natural birth preparation begins during pregnancy. We help you understand labour, prepare your body and mind, explore your birth preferences, and approach childbirth with personalised obstetric care and holistic support."
+        intro="At The Birthwave, natural birth preparation begins during pregnancy. We help you understand labour, prepare your body and mind, explore your birth preferences, and approach childbirth with personalised obstetric care and holistic support."
         accent="coral"
         image={{
           src: "/images/care/birth-position-practice.png",
@@ -153,6 +153,9 @@ export function BirthDeliveryCarePage() {
         }}
         illustration="birth"
       />
+
+      {/* VIDEO EXPERIENCE */}
+      <VideoExperience />
 
       {/* SECTION 2: Understanding Natural Birth */}
       <section className="bg-white py-16 md:py-20 border-b border-border/60">
@@ -171,7 +174,7 @@ export function BirthDeliveryCarePage() {
               During labour, a mother may use breathing and relaxation techniques, walking or changing positions, gentle movement, massage, and physical and emotional support to help her stay comfortable and cope with contractions. These approaches are recognised in childbirth guidance as options that can support women during labour.
             </p>
             <p>
-              At Birthwave, preparation for natural birth begins during pregnancy. We help you understand what happens during labour, practise ways to stay calm and comfortable, prepare your body and mind, and discuss your birth preferences with your doctor.
+              At The Birthwave, preparation for natural birth begins during pregnancy. We help you understand what happens during labour, practise ways to stay calm and comfortable, prepare your body and mind, and discuss your birth preferences with your doctor.
             </p>
             <p className="font-medium text-ink/85">
               Throughout your pregnancy and birth, your care is personalised around you, your baby and how your pregnancy and labour progress.
@@ -280,7 +283,7 @@ export function BirthDeliveryCarePage() {
               Natural birth preparation starts before the day of delivery.
             </h2>
             <p className="mt-3.5 text-[16px] leading-[1.65] text-muted">
-              Birth preparation is not only about what happens once labour begins. At Birthwave, conversations about birth can begin during pregnancy, giving you time to understand labour, discuss your preferences, prepare physically and emotionally, and involve the person who will support you during birth.
+              Birth preparation is not only about what happens once labour begins. At The Birthwave, conversations about birth can begin during pregnancy, giving you time to understand labour, discuss your preferences, prepare physically and emotionally, and involve the person who will support you during birth.
             </p>
             <h3 className="mt-6 font-display text-[18px] font-bold text-ink">
               Your preparation may include
@@ -355,7 +358,8 @@ export function BirthDeliveryCarePage() {
         </Container>
       </section>
 
-      {/* SECTION 5: PREPARING YOUR BODY & MIND */}
+      {/* SECTION 5: PREPARING YOUR BODY & MIND — hidden on website + landing pages per request */}
+      {false && (
       <section className="bg-cream/45 py-16 md:py-24 border-b border-border/60">
         <Container>
           <div className="max-w-3xl">
@@ -366,7 +370,7 @@ export function BirthDeliveryCarePage() {
               Preparing for natural birth during pregnancy
             </h2>
             <p className="mt-3.5 text-[16px] leading-[1.65] text-muted">
-              Preparation can begin well before your due date. Rather than approaching childbirth as something to think about only during the final weeks, Birthwave brings together pregnancy care, education, movement and supportive wellness practices throughout your journey.
+              Preparation can begin well before your due date. Rather than approaching childbirth as something to think about only during the final weeks, The Birthwave brings together pregnancy care, education, movement and supportive wellness practices throughout your journey.
             </p>
             <p className="mt-4 text-[14.5px] font-semibold text-ink/80">
               Depending on your individual pregnancy and care plan, this may include:
@@ -427,6 +431,7 @@ export function BirthDeliveryCarePage() {
           </div>
         </Container>
       </section>
+      )}
 
       {/* SECTION 6: MEET YOUR DOCTOR */}
       <section className="bg-white py-16 md:py-24 border-b border-border/60">
@@ -452,10 +457,10 @@ export function BirthDeliveryCarePage() {
             </h2>
             <div className="mt-4 max-w-xl space-y-4 text-[16px] leading-relaxed text-muted">
               <p>
-                At Birthwave, Dr. Santoshi works with women throughout pregnancy to understand their health, concerns, preferences and expectations around childbirth.
+                At The Birthwave, Dr. Santoshi works with women throughout pregnancy to understand their health, concerns, preferences and expectations around childbirth.
               </p>
               <p>
-                For women interested in natural birth, discussions can begin during antenatal care — helping you understand labour, explore your birth preferences and prepare for childbirth with medical guidance alongside Birthwave’s supportive approach to pregnancy and wellness.
+                For women interested in natural birth, discussions can begin during antenatal care — helping you understand labour, explore your birth preferences and prepare for childbirth with medical guidance alongside The Birthwave’s supportive approach to pregnancy and wellness.
               </p>
               <p className="font-medium text-ink">
                 The focus is on informed choices, individualised care and clear communication throughout pregnancy and birth.
@@ -594,7 +599,7 @@ export function BirthDeliveryCarePage() {
               Care that connects pregnancy, birth and recovery
             </h2>
             <p className="mt-3.5 text-[16px] leading-[1.65] text-muted">
-              Birthwave’s approach extends beyond the day your baby is born. Your pregnancy and birth journey can connect with supportive care across:
+              The Birthwave’s approach extends beyond the day your baby is born. Your pregnancy and birth journey can connect with supportive care across:
             </p>
           </div>
 
@@ -671,9 +676,6 @@ export function BirthDeliveryCarePage() {
           </div>
         </Container>
       </section>
-
-      {/* VIDEO EXPERIENCE */}
-      <VideoExperience />
 
       {/* SECTION 10: FAQs */}
       <section id="faq" className="scroll-mt-[100px] bg-paper py-16 md:py-24">

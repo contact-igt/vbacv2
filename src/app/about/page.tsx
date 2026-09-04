@@ -26,17 +26,17 @@ export const metadata: Metadata = {
 const gallery = [
   {
     src: "/images/birthwave/birthwave-childbirth-workshop-01.png",
-    alt: "Childbirth education workshop session at Birthwave",
+    alt: "Childbirth education workshop session at The Birthwave",
     caption: "Childbirth education workshops",
   },
   {
     src: "/images/birthwave/birthwave-birth-partner-session.png",
-    alt: "Birth partner preparation session at Birthwave",
+    alt: "Birth partner preparation session at The Birthwave",
     caption: "Birth partner preparation",
   },
   {
     src: "/images/birthwave/birthwave-community-event.png",
-    alt: "Birthwave community health event",
+    alt: "The Birthwave community health event",
     caption: "Community health events",
   },
 ];
@@ -47,13 +47,13 @@ export default function AboutPage() {
       <Header />
       <main>
         <PageHero
-          eyebrow="About Birthwave"
+          eyebrow="About The Birthwave"
           heading="Care that feels like one continuous journey, not a series of appointments."
-          intro="Birthwave was built around a simple idea: patients shouldn't have to re-explain their history at every visit. One doctor, one care plan, from your first question through follow-up."
+          intro="The Birthwave was built around a simple idea: patients shouldn't have to re-explain their history at every visit. One doctor, one care plan, from your first question through follow-up."
           accent="rose"
           image={{
             src: "/images/birthwave/birthwave.JPG",
-            alt: "Dr. Santoshi Nandigam leading a Birthwave workshop",
+            alt: "Dr. Santoshi Nandigam leading a The Birthwave workshop",
           }}
         />
 
@@ -63,7 +63,7 @@ export default function AboutPage() {
               Our approach
             </h2>
             <p className="mt-4 text-[16px] leading-relaxed text-muted">
-              Birthwave is designed to feel less like moving between disconnected
+              The Birthwave is designed to feel less like moving between disconnected
               appointments and more like one continuous care journey, with space for
               questions, preferences, preparation and follow up — across pregnancy,
               birth and recovery, and into newborn and pediatric care.
@@ -142,7 +142,7 @@ export default function AboutPage() {
         <GoogleGallery />
 
         <PageCTA
-          heading="Want to know if Birthwave is right for you?"
+          heading="Want to know if The Birthwave is right for you?"
           body="Reach out by phone or WhatsApp — we're happy to answer questions before you book."
         />
 

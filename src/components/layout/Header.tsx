@@ -273,7 +273,7 @@ export function Header({ minimalNav = false }: { minimalNav?: boolean }) {
                 rel="noreferrer"
                 className="min-h-11 rounded-full border border-border bg-white py-2.5 text-center text-sm font-semibold text-ink"
               >
-                WhatsApp Birthwave
+                WhatsApp The Birthwave
               </a>
               <a
                 href="#enquiry"

@@ -5,9 +5,9 @@ import { Container } from "@/components/Container";
 import { Reveal } from "@/components/motion/Reveal";
 
 export function VideoExperience({
-  eyebrow = "Inside Birthwave",
+  eyebrow = "Inside The Birthwave",
   heading = "Care designed around the whole journey.",
-  body = "See how Birthwave brings pregnancy, birth, recovery and newborn care together in one connected experience.",
+  body = "See how The Birthwave brings pregnancy, birth, recovery and newborn care together in one connected experience.",
   className = "bg-cream py-16 md:py-24 border-y border-border/60",
 }: {
   eyebrow?: string;
@@ -66,7 +66,7 @@ export function VideoExperience({
               loop
               playsInline
               preload="metadata"
-              aria-label="Birthwave hospital care experience"
+              aria-label="The Birthwave hospital care experience"
             />
             <button
               type="button"

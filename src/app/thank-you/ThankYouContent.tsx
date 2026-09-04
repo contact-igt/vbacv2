@@ -25,7 +25,7 @@ export function ThankYouContent() {
         Thank you. We&rsquo;ve received your enquiry.
       </h1>
       <p className="mt-5 text-[16px] leading-[1.6] text-muted">
-        Birthwave&rsquo;s team will review the request and contact you using the
+        The Birthwave&rsquo;s team will review the request and contact you using the
         details you submitted.
       </p>
 

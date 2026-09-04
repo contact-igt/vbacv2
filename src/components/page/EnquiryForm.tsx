@@ -184,7 +184,7 @@ export function EnquiryForm({ defaultService }: { defaultService?: string } = {}
           onChange={(e) => setConsent(e.target.checked)}
           className="mt-0.5 h-4 w-4 shrink-0 accent-rose"
         />
-        Birthwave may contact me regarding this enquiry or appointment request.
+        The Birthwave may contact me regarding this enquiry or appointment request.
       </label>
       {fieldErrors.consent && (
         <span className="-mt-2 text-xs text-coral">{fieldErrors.consent}</span>

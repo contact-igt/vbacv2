@@ -10,7 +10,6 @@ const services = [
       "Routine and high touch pregnancy care with a clear plan for each trimester.",
     href: "/pregnancy-antenatal-care",
     span: "col-span-1 sm:col-span-4",
-    feature: true,
   },
   {
     title: "Fertility & Preconception",
@@ -78,38 +77,18 @@ export function Services() {
             >
               <Link
                 href={service.href}
-                className={`group flex h-full min-h-[215px] min-w-0 flex-col rounded-[20px] border p-5 transition-[transform,box-shadow,background] duration-300 hover:-translate-y-[5px] hover:shadow-[var(--shadow-od)] sm:min-h-[220px] sm:p-[27px] ${
-                  "feature" in service && service.feature
-                    ? "border-transparent bg-rose text-white hover:bg-rose-deep"
-                    : "border-border bg-white/70 hover:bg-white"
-                }`}
+                className="group flex h-full min-h-[215px] min-w-0 flex-col rounded-[20px] border border-border bg-white/70 p-5 transition-[transform,box-shadow,background,border-color] duration-300 hover:-translate-y-[5px] hover:border-transparent hover:bg-rose hover:shadow-[var(--shadow-od)] sm:min-h-[220px] sm:p-[27px]"
               >
-                <span
-                  className={`mb-auto font-display text-sm ${
-                    "feature" in service && service.feature ? "text-white/80" : "text-rose"
-                  }`}
-                >
+                <span className="mb-auto font-display text-sm text-rose group-hover:text-white/80">
                   {String(i + 1).padStart(2, "0")}
                 </span>
-                <h3
-                  className={`mt-[18px] mb-[9px] font-display text-[clamp(16px,4.6vw,20px)] leading-[1.1] font-bold tracking-[-0.01em] break-words sm:text-[24px] ${
-                    "feature" in service && service.feature ? "text-white" : "text-ink"
-                  }`}
-                >
+                <h3 className="mt-[18px] mb-[9px] font-display text-[clamp(16px,4.6vw,20px)] leading-[1.1] font-bold tracking-[-0.01em] break-words text-ink group-hover:text-white sm:text-[24px]">
                   {service.title}
                 </h3>
-                <p
-                  className={`text-[13px] leading-[1.5] sm:text-sm ${
-                    "feature" in service && service.feature ? "text-white/85" : "text-muted"
-                  }`}
-                >
+                <p className="text-[13px] leading-[1.5] text-muted group-hover:text-white/85 sm:text-sm">
                   {service.description}
                 </p>
-                <span
-                  className={`mt-[19px] text-[13px] font-bold ${
-                    "feature" in service && service.feature ? "text-white/85" : "text-rose"
-                  }`}
-                >
+                <span className="mt-[19px] text-[13px] font-bold text-rose group-hover:text-white/85">
                   Explore service →
                 </span>
               </Link>

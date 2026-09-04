@@ -23,7 +23,7 @@ export const team: readonly TeamMember[] = [
     credential: "MBBS, DNB — Obstetrics & Gynaecology",
     group: "founder",
     image: "/images/birthwave/dr-santoshi.JPG",
-    bio: "Birthwave is designed as one continuous care journey, with space for questions, preferences, preparation and follow-up — across pregnancy, birth and recovery.",
+    bio: "The Birthwave is designed as one continuous care journey, with space for questions, preferences, preparation and follow-up — across pregnancy, birth and recovery.",
     expertiseHref: "/vbac",
   },
   {
