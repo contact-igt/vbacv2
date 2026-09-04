@@ -6,7 +6,7 @@ export type ServiceContent = {
   title: string;
   shortDescription: string;
   accent: "rose" | "blue" | "coral";
-  image?: { src: string; alt: string };
+  image?: { src: string; alt: string; objectPosition?: string };
   /** Smaller overlapping photo shown in the v2-style layered hero. When absent
    *  the hero renders a single arched photo (or the illustration fallback). */
   imageSide?: { src: string; alt: string };
