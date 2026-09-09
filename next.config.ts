@@ -1,11 +1,59 @@
 import type { NextConfig } from "next";
 
+// Content-Security-Policy — kept in sync with the other Birthwave properties
+// (main site + service landing pages). Allows GTM / GA4 / Google Ads
+// (incl. ad.doubleclick.net for the conversion linker), Microsoft Clarity,
+// Google Fonts, the WhatsApp click-to-chat flow, the client-side IP-geolocation
+// lookup used for lead attribution, and the OpenAI oaiq conversion pixel.
+const cspHeader = `
+  default-src 'self';
+  script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com https://tagmanager.google.com https://*.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://*.g.doubleclick.net https://*.doubleclick.net https://doubleclick.net https://*.googleadservices.com https://googleadservices.com https://*.googlesyndication.com https://*.google.com https://*.google.co.in https://www.clarity.ms https://*.clarity.ms https://c.bing.com https://scripts.clarity.ms https://bzrcdn.openai.com;
+  script-src-elem 'self' 'unsafe-inline' https://www.googletagmanager.com https://tagmanager.google.com https://*.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://*.g.doubleclick.net https://*.doubleclick.net https://doubleclick.net https://*.googleadservices.com https://googleadservices.com https://*.googlesyndication.com https://*.google.com https://*.google.co.in https://www.clarity.ms https://*.clarity.ms https://c.bing.com https://scripts.clarity.ms https://bzrcdn.openai.com;
+  style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://tagmanager.google.com https://www.googletagmanager.com;
+  style-src-elem 'self' 'unsafe-inline' https://fonts.googleapis.com https://tagmanager.google.com https://www.googletagmanager.com;
+  img-src 'self' data: blob: https://www.googletagmanager.com https://*.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://*.g.doubleclick.net https://*.doubleclick.net https://doubleclick.net https://*.googleadservices.com https://googleadservices.com https://*.googlesyndication.com https://*.google.com https://*.google.co.in https://*.googleusercontent.com https://*.gstatic.com https://www.clarity.ms https://*.clarity.ms https://c.bing.com;
+  font-src 'self' data: https://fonts.gstatic.com;
+  connect-src 'self' https://api.ipify.org https://ipwho.is https://ipapi.co https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://tagmanager.google.com https://*.g.doubleclick.net https://*.doubleclick.net https://doubleclick.net https://ad.doubleclick.net https://*.googleadservices.com https://googleadservices.com https://*.googlesyndication.com https://*.google.com https://*.google.co.in https://stats.g.doubleclick.net https://www.clarity.ms https://*.clarity.ms https://c.bing.com https://api.whatsapp.com https://wa.me https://bzrcdn.openai.com https://bzr.openai.com;
+  frame-src 'self' https://www.googletagmanager.com https://*.googletagmanager.com https://tagmanager.google.com https://*.google.com https://*.doubleclick.net https://doubleclick.net https://api.whatsapp.com https://web.whatsapp.com;
+  child-src 'self' https://www.googletagmanager.com https://*.googletagmanager.com https://tagmanager.google.com https://*.google.com https://*.doubleclick.net https://doubleclick.net https://api.whatsapp.com https://web.whatsapp.com;
+  object-src 'none';
+  base-uri 'self';
+  form-action 'self' https://wa.me https://api.whatsapp.com;
+`
+  .replace(/\s{2,}/g, " ")
+  .trim();
+
 const nextConfig: NextConfig = {
   // Pin the workspace root to this project — a stray package-lock.json in the
   // parent home directory (pre-existing, unrelated to this app) would otherwise
   // confuse Next's root inference.
   turbopack: {
     root: __dirname,
+  },
+  async headers() {
+    return [
+      {
+        source: "/(.*)",
+        headers: [
+          {
+            key: "Content-Security-Policy",
+            value: cspHeader,
+          },
+          {
+            key: "X-Content-Type-Options",
+            value: "nosniff",
+          },
+          {
+            key: "X-Frame-Options",
+            value: "DENY",
+          },
+          {
+            key: "Referrer-Policy",
+            value: "strict-origin-when-cross-origin",
+          },
+        ],
+      },
+    ];
   },
 };
 
